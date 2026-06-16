@@ -203,6 +203,31 @@ a {
   outline-offset: 4px;
 }
 
+.page-footer {
+  position: fixed;
+  right: 0;
+  bottom: 18px;
+  left: 0;
+
+  padding: 0 24px;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+@media (max-height: 700px) {
+  .page-footer {
+    position: static;
+    margin-top: 28px;
+  }
+}
+
 @media (max-width: 520px) {
   .placeholder-card {
     border-radius: 22px;

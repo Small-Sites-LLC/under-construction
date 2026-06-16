@@ -18,3 +18,10 @@ if (
   domainElement.textContent = hostname;
   document.title = `${hostname} | Website Coming Soon`;
 }
+
+const copyrightYear =
+  document.getElementById("copyright-year");
+
+if (copyrightYear) {
+  copyrightYear.textContent = new Date().getFullYear();
+}
