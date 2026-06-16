@@ -4,13 +4,6 @@ A reusable under-construction page for domains managed by Small Sites LLC.
 
 The page automatically displays the current domain name and provides a contact link while the full website is being developed.
 
-## Files
-
-* `index.html` — page structure
-* `styles.css` — page styling and responsive layout
-* `script.js` — domain detection and automatic copyright year
-* `LICENSE` — usage and ownership terms
-
 ## Deployment
 
 Place the files in the website directory served by Nginx, such as:
