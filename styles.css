@@ -1,12 +1,12 @@
 :root {
   color-scheme: dark;
 
-  --background: #080b12;
+  --background: #060814;
   --surface: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.12);
-  --text: #f5f7fb;
-  --muted: #a9b0c0;
-  --accent: #7ea2ff;
+  --text: red;
+  --muted: #a8b3cf;
+  --accent: #a78bfa;
 }
 
 * {
@@ -31,14 +31,14 @@ body {
 
   background:
     radial-gradient(
-      circle at 20% 20%,
-      rgba(79, 112, 255, 0.22),
-      transparent 35%
+      circle at 15% 20%,
+      rgba(124, 58, 237, 0.18),
+      transparent 48rem
     ),
     radial-gradient(
-      circle at 80% 75%,
-      rgba(125, 82, 255, 0.18),
-      transparent 35%
+      circle at 80% 55%,
+      rgba(34, 211, 238, 0.09),
+      transparent 42rem
     ),
     var(--background);
 
@@ -53,24 +53,27 @@ body {
 }
 
 .background-grid {
-  position: fixed;
+  content: "";
+
+  position: absolute;
   inset: 0;
 
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0.18;
 
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.04) 1px,
+      var(--color-line) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.04) 1px,
+      var(--color-line) 1px,
       transparent 1px
     );
 
-  background-size: 48px 48px;
+  background-size: 54px 54px;
+
   mask-image: linear-gradient(to bottom, black, transparent);
 }
 
