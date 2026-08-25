@@ -4,9 +4,11 @@
   --background: #060814;
   --surface: rgba(255, 255, 255, 0.06);
   --border: rgba(255, 255, 255, 0.12);
-  --text: red;
+  --text: #f8fafc;
   --muted: #a8b3cf;
   --accent: #a78bfa;
+
+  --color-line: rgba(255, 255, 255, 0.12);
 }
 
 * {
@@ -74,7 +76,11 @@ body {
 
   background-size: 54px 54px;
 
-  mask-image: linear-gradient(to bottom, black, transparent);
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 95%
+  );
 }
 
 .placeholder-card {
