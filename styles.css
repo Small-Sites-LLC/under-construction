@@ -7,6 +7,8 @@
   --text: #f8fafc;
   --muted: #a8b3cf;
   --accent: #a78bfa;
+  --color-primary: #7c3aed;
+  --color-cyan: #22d3ee;
 
   --color-line: rgba(255, 255, 255, 0.12);
 }
@@ -178,6 +180,11 @@ h1 {
 a {
   color: var(--text);
   text-decoration: none;
+  transition: color 160ms ease;  
+}
+
+a:hover:not(.contact) {
+  color: var(--accent);
 }
 
 .contact {
